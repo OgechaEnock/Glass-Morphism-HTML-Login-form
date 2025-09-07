@@ -29,7 +29,7 @@ body {
     backdrop-filter: blur(15px);
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 25px 45px rgbargb(0, 0, 0, 0.4);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
     z-index: 10;
     overflow: hidden;
 
@@ -48,4 +48,128 @@ body {
 }
 .glasscontainer :hover::before {
     left: 120%;
+}
+.glasscontainer h2{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) ;
+}
+.inputgroup {
+    position: relative;
+    margin-bottom: 30px;
+
+}
+.inputgroup input {
+    width: 100%;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    border-radius: 35px;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3 ease;
+
+}
+.inputgroup input ::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+
+}
+.inputgroup input :focus{
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px  rgba(0, 0, 0, 0.1);
+}
+.inputgroup label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+}
+.inputgroup input :focus+label,
+.inputgroup input :valid+label {
+    top: 0;
+    left: 15px;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    padding-left: 2px 8px;
+    border-radius: 10px;
+    color: #fff;
+
+}
+.rememberforgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+.rememberforgot label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.rememberforgot input{
+    margin-right: 8px;
+    accent-color: #fff;
+}
+.rememberforgot a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+.rememberforgot a:hover {
+    text-decoration: underline;
+
+}
+.loginbtn {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    outline: none;
+    border-radius: 35px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+ .loginbtn :hover{
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+ }
+ .registerlink a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3 ease;
+    
+
+ }
+ .registerlink a :hover{
+    text-decoration: underline;
+ }
+
+ .registerlink p{
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3 ease;
 }
